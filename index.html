@@ -1,273 +1,191 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shimaa Bakri Ahmed - Front-End Developer and UI/UX Designer Portfolio">
+
     <title>Shimaa Bakri | Portfolio</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 
     <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Responsive CSS: must load after style.css -->
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
 
-    <!--========================
-        Scroll Progress
-    =========================-->
-
+    <!-- Scroll Progress -->
     <div id="progress-bar"></div>
 
-    <!--========================
-        Header
-    =========================-->
-
+    <!-- Header -->
     <header>
-
         <div class="logo">
             <h2>Shimaa.</h2>
         </div>
 
         <nav>
-
             <ul id="navLinks">
-
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About</a></li>
-
                 <li><a href="#skills">Skills</a></li>
-
                 <li><a href="#experience">Experience</a></li>
-
                 <li><a href="#projects">Projects</a></li>
-
                 <li><a href="#services">Services</a></li>
-
                 <li><a href="#certificates">Certificates</a></li>
-
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
-
         </nav>
 
-        <div class="menu">
-
+        <div class="menu" aria-label="Toggle navigation menu"
+            role="button" tabindex="0">
             <i class="fa-solid fa-bars"></i>
-
         </div>
-
     </header>
 
-    <!--========================
-        Hero
-    =========================-->
-
+    <!-- Hero -->
     <section class="hero" id="home">
 
         <div class="hero-text" data-aos="fade-right">
-
             <span>Hello, I'm</span>
 
             <h1>Shimaa Bakri Ahmed</h1>
 
-            <h2>
-                <span class="typing"></span>
-            </h2>
+            <h2><span class="typing"></span></h2>
 
             <p>
-
-                I design and develop modern, responsive, and user-friendly websites
-                with a strong focus on UI/UX, clean code, and engaging digital
-                experiences.
-
+                Front-End Developer skilled in HTML, CSS, JavaScript,
+                and React.js, with a background in UI/UX design.
+                Focused on building responsive, user-friendly web
+                interfaces and translating designs into functional websites.
             </p>
 
             <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
 
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="./files/shimaa_cv (2).pdf"
-                    download
-                    class="btn2">
-
+                <a href="./files/Shimaa Bakri_CV.pdf"
+                    download class="btn2">
                     Download CV
-
                 </a>
-
             </div>
 
             <div class="social">
-
                 <a href="https://github.com/Sh-B053"
-                    target="_blank">
-
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
                     <i class="fab fa-github"></i>
-
                 </a>
 
                 <a href="https://www.linkedin.com/in/shimaa-bakri"
-                    target="_blank">
-
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
-
                 </a>
 
-                <a href="mailto:shimma.baakri@gmail.com">
-
+                <a href="mailto:shimma.baakri12@gmail.com"
+                    aria-label="Email">
                     <i class="fa-solid fa-envelope"></i>
-
                 </a>
-
             </div>
-
         </div>
 
         <div class="hero-image" data-aos="fade-left">
-
-            <img src="./images/shimaa.jpeg"
-                alt="Shimaa">
-
+            <img src="./images/shimaa.jpeg" alt="Shimaa Bakri Ahmed">
         </div>
 
     </section>
 
-    <!--========================
-        About
-    =========================-->
-
+    <!-- About -->
     <section class="about section" id="about">
 
         <div class="section-title">
-
+            <span>About Me</span>
             <h2>Who Am I?</h2>
-
         </div>
 
         <div class="about-container">
 
-            <div class="about-image"
-                data-aos="fade-right">
-
-                <img src="./images/shimaa.jpeg"
-                    alt="">
-
+            <div class="about-image" data-aos="fade-right">
+                <img src="./images/shimaa.jpeg" alt="Shimaa Bakri">
             </div>
 
-            <div class="about-text"
-                data-aos="fade-left">
+            <div class="about-text" data-aos="fade-left">
 
-                <h3>
-
-                    Web Designer &
-                    Front-End Developer
-
-                </h3>
+                <h3>Web Designer & Front-End Developer</h3>
 
                 <p>
-
                     I'm an Information Technology student at the
-                    Egyptian E-Learning University (EELU),
-                    expected to graduate in 2027.
-
+                    Egyptian E-Learning University (EELU), expected
+                    to graduate in 2027.
                 </p>
 
                 <p>
-
-                    Passionate about designing and developing
-                    modern websites that combine aesthetics
-                    with functionality. I enjoy transforming
-                    creative ideas into responsive and interactive
+                    I'm passionate about designing and developing
+                    modern websites that combine visual appeal
+                    with functionality. I enjoy transforming creative
+                    ideas and UI designs into responsive and interactive
                     web experiences.
-
                 </p>
 
                 <p>
-
-                    I have completed multiple professional
-                    training programs in UI/UX Design,
-                    React Development, and Web Design,
-                    continuously enhancing my skills through
-                    real-world projects and teamwork.
-
+                    I've completed training programs in UI/UX Design,
+                    React Development, and Web Design, and continue
+                    improving my skills through practical projects
+                    and teamwork.
                 </p>
 
                 <div class="about-info">
 
                     <div>
-
                         <h4>Name</h4>
-
-                        <span>
-
-                            Shimaa Bakri Ahmed
-
-                        </span>
-
+                        <span>Shimaa Bakri Ahmed</span>
                     </div>
 
                     <div>
-
                         <h4>Email</h4>
-
                         <span>
-
-                            shimma.baakri12@gmail.com
-
+                            <a href="mailto:shimma.baakri12@gmail.com">
+                                shimma.baakri12@gmail.com
+                            </a>
                         </span>
-
                     </div>
 
                     <div>
-
                         <h4>Phone</h4>
-
                         <span>
-
-                            +20 1123177180
-
+                            <a href="tel:+201123177180">
+                                +20 1123177180
+                            </a>
                         </span>
-
                     </div>
 
                     <div>
-
                         <h4>Education</h4>
-
-                        <span>
-
-                            EELU - IT
-
-                        </span>
-
+                        <span>EELU - Information Technology</span>
                     </div>
 
                 </div>
-
             </div>
-
         </div>
-
     </section>
-        <!--========================
-            Skills
-    =========================-->
 
+    <!-- Skills -->
     <section class="skills section" id="skills">
 
         <div class="section-title">
@@ -323,8 +241,8 @@
             </div>
 
             <div class="skill-card" data-aos="zoom-in">
-                <i class="fa-solid fa-pencil-ruler"></i>
-                <h3>UI / UX</h3>
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>UI / UX Design</h3>
             </div>
 
             <div class="skill-card" data-aos="zoom-in">
@@ -333,13 +251,9 @@
             </div>
 
         </div>
-
     </section>
 
-    <!--========================
-        Experience
-    =========================-->
-
+    <!-- Experience / Training -->
     <section class="experience section" id="experience">
 
         <div class="section-title">
@@ -350,706 +264,601 @@
         <div class="timeline">
 
             <div class="timeline-item" data-aos="fade-right">
-
-                <h3>DEPI - UI/UX Designer</h3>
-
-                <span>Nov 2024 - May 2025</span>
-
+                <h3>DEPI - UI/UX Design</h3>
+                <span>Nov 2024 - May 2025 | 6 Months</span>
                 <p>
-                    Completed a professional UI/UX Design training program
-                    covering User Research, Wireframing,
-                    Prototyping and Design Systems using Figma.
+                    Completed a professional UI/UX Design training
+                    program covering user research, wireframing,
+                    prototyping, and interface design using Figma.
                 </p>
-
             </div>
 
             <div class="timeline-item" data-aos="fade-left">
-
                 <h3>ITI - React.js Web Development</h3>
-
-                <span>120 Hours</span>
-
+                <span>Jun 2025 - Jul 2025 | 120 Hours</span>
                 <p>
-                    Learned modern React development including Components,
-                    Routing, Hooks, State Management and API Integration.
+                    Completed summer training in web development
+                    using React.js, focusing on component-based
+                    development and building interactive interfaces.
                 </p>
-
             </div>
 
             <div class="timeline-item" data-aos="fade-right">
-
-                <h3>NTI - Web Designer</h3>
-
-                <span>One Month</span>
-
+                <h3>NTI - Web Design</h3>
+                <span>Jun 2026 - Jul 2026 | 120 Hours</span>
                 <p>
-                    Built responsive websites using
-                    HTML, CSS, Bootstrap and JavaScript.
+                    Completed summer training in web design,
+                    practicing HTML, CSS, responsive layouts,
+                    and modern website development.
                 </p>
-
             </div>
 
             <div class="timeline-item" data-aos="fade-left">
-
-                <h3>DEPI - React Front-End Developer</h3>
-
-                <span>6 Months</span>
-
+                <h3>DEPI - React Front-End Development</h3>
+                <span>Nov 2025 - Jul 2026 | 6 Months</span>
                 <p>
-                    Developed responsive React applications,
-                    collaborated in team projects,
-                    and worked with Git & GitHub workflows.
+                    Completed a React Front-End Development track,
+                    building responsive interfaces and practicing
+                    collaborative development with Git and GitHub.
                 </p>
-
             </div>
 
         </div>
-
     </section>
 
-    <!--========================
-            Services
-    =========================-->
-
+    <!-- Services -->
     <section class="services section" id="services">
 
         <div class="section-title">
-
             <span>Services</span>
-
             <h2>What I Can Do</h2>
-
         </div>
 
         <div class="services-container">
 
             <div class="service-card">
-
                 <i class="fa-solid fa-laptop-code"></i>
-
                 <h3>Landing Pages</h3>
-
                 <p>
                     Modern and responsive landing pages
-                    with attractive UI.
+                    with attractive user interfaces.
                 </p>
-
             </div>
 
             <div class="service-card">
-
                 <i class="fa-solid fa-mobile-screen-button"></i>
-
                 <h3>Responsive Websites</h3>
-
                 <p>
                     Websites optimized for desktop,
-                    tablet and mobile devices.
+                    tablet, and mobile devices.
                 </p>
-
             </div>
 
             <div class="service-card">
-
                 <i class="fa-solid fa-pen-ruler"></i>
-
                 <h3>UI Design</h3>
-
                 <p>
                     Clean and user-friendly interfaces
                     using modern design principles.
                 </p>
-
             </div>
 
             <div class="service-card">
-
                 <i class="fa-solid fa-repeat"></i>
-
                 <h3>Website Redesign</h3>
-
                 <p>
-                    Improve old websites with a fresh,
-                    modern and responsive design.
+                    Improving existing websites with
+                    a fresh and responsive design.
                 </p>
-
             </div>
 
             <div class="service-card">
-
                 <i class="fa-brands fa-react"></i>
-
                 <h3>React Development</h3>
-
                 <p>
-                    Interactive web applications
-                    using React.js.
+                    Interactive web interfaces and
+                    applications using React.js.
                 </p>
-
             </div>
 
         </div>
-
     </section>
 
-    <!--========================
-            Projects
-    =========================-->
-
+    <!-- Projects -->
     <section class="projects section" id="projects">
 
         <div class="section-title">
-
             <span>Portfolio</span>
-
             <h2>Featured Projects</h2>
-
         </div>
 
         <div class="projects-container">
-            <!-- ========================
-        Project 1
-========================= -->
 
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 114143.png" alt="">
-
-    <div class="project-info">
-
-        <h3>Register Form</h3>
-
-        <p>
-A clean and responsive Register Form designed with HTML and CSS, featuring a modern layout, user-friendly input fields, and an organized interface. The form is optimized for different screen sizes, providing a smooth and visually appealing user experience.        </p>
-
-        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-8_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-8_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-            <!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 114725.png" alt="">
-
-    <div class="project-info">
-
-        <h3>Travilifa</h3>
-
-        <p>
-A modern and responsive Landing Page built with HTML and CSS, featuring a clean layout, engaging sections, smooth visual styling, and a user-friendly design. The page is optimized for different screen sizes to deliver a consistent and attractive browsing experience.        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-7_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-7_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-            <!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 115313.png" alt="">
-
-    <div class="project-info">
-
-        <h3>Foody</h3>
-
-        <p>
-A responsive Restaurant Landing Page built with HTML and CSS, featuring an attractive hero section, well-structured content, elegant typography, and a modern layout. The website is designed to provide a visually appealing user experience while maintaining responsiveness across different devices.        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-6_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-6_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-            <!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 115856.png" alt="">
-
-    <div class="project-info">
-
-        <h3>Tic Tac Toe</h3>
-
-        <p>
-An interactive Tic-Tac-Toe (X-O) Game built with HTML, CSS, and JavaScript. The game features a responsive design, smooth gameplay, turn-based logic, win and draw detection, and a reset option, providing an enjoyable and user-friendly gaming experience across different devices.
-        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-5_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-5_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-<!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-30 220347.png" alt="">
-
-    <div class="project-info">
-
-        <h3>portfolio</h3>
-
-        <p>A modern and responsive Personal Portfolio Website designed to showcase my skills, projects, and professional profile. The website features a clean UI, organized sections, responsive layouts, smooth animations, and an intuitive user experience. It highlights my frontend development and UI/UX design abilities while providing an easy way to explore my work and contact information.</p>
-        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/portfolio.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/portfolio/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-            <!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 121009.png" alt="">
-
-    <div class="project-info">
-
-        <h3>INANCE</h3>
-
-        <p>
-A responsive Landing Page built with HTML5 and CSS3, featuring a modern and clean layout. The project focuses on responsive design, well-structured sections, attractive typography, and a user-friendly interface to deliver a smooth browsing experience across different devices.</p>
-        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-3_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-3_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-            <!-- ========================
-        Project 1
-========================= -->
-
-<div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 121353.png" alt="">
-
-    <div class="project-info">
-
-        <h3>Charles Business</h3>
-
-        <p>  A responsive Personal Portfolio Website built with HTML5 and CSS3. The project showcases a clean and modern design with sections for introducing personal information, skills, projects, and contact details. It emphasizes responsive layouts, organized content, and a user-friendly interface to provide a professional online presence.   </p>
-
-        <div class="tech">
-
-            <span>HTML</span>
-            <span>CSS</span>
-
-        </div>
-
-        <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/task-2_nti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/task-2_nti/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
+            <!-- Project 1: Register Form -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 114143.png"
+                    alt="Register Form">
+
+                <div class="project-info">
+                    <h3>Register Form</h3>
+
+                    <p>
+                        A clean and responsive registration form with
+                        user-friendly input fields and a modern layout.
+                        The interface is designed to adapt to different
+                        screen sizes and provide a clear user experience.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-8_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-8_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Travilifa -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 114725.png"
+                    alt="Travilifa Landing Page">
+
+                <div class="project-info">
+                    <h3>Travilifa</h3>
+
+                    <p>
+                        A modern landing page built with HTML and CSS,
+                        featuring a clean layout, engaging sections,
+                        and responsive styling for different screen sizes.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-7_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-7_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Foody -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 115313.png"
+                    alt="Foody Restaurant Website">
+
+                <div class="project-info">
+                    <h3>Foody</h3>
+
+                    <p>
+                        A responsive restaurant landing page featuring
+                        an attractive hero section, structured content,
+                        elegant typography, and a modern visual layout.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-6_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-6_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Tic Tac Toe -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 115856.png"
+                    alt="Tic Tac Toe Game">
+
+                <div class="project-info">
+                    <h3>Tic Tac Toe</h3>
+
+                    <p>
+                        An interactive Tic-Tac-Toe game built with
+                        HTML, CSS, and JavaScript. It includes
+                        turn-based gameplay, win and draw detection,
+                        and a reset option in a responsive interface.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-5_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-5_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Personal Portfolio -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-30 220347.png"
+                    alt="Personal Portfolio Website">
+
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive personal portfolio website showcasing
+                        skills, projects, and professional information.
+                        It features organized sections, smooth animations,
+                        and a user-friendly design.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/portfolio"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/portfolio/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: INANCE -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 121009.png"
+                    alt="INANCE Landing Page">
+
+                <div class="project-info">
+                    <h3>INANCE</h3>
+
+                    <p>
+                        A responsive landing page built with HTML5 and
+                        CSS3, featuring a clean layout, structured
+                        sections, and an interface designed for
+                        different screen sizes.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-3_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-3_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7: Charles Business -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 121353.png"
+                    alt="Charles Business Website">
+
+                <div class="project-info">
+                    <h3>Charles Business</h3>
+
+                    <p>
+                        A responsive website built with HTML5 and CSS3,
+                        featuring a clean layout and organized sections.
+                        The project emphasizes responsive design,
+                        clear content, and a professional presentation.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/task-2_nti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/task-2_nti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8: Movie App -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-07-27 122039.png"
+                    alt="Movie App">
+
+                <div class="project-info">
+                    <h3>Movie App</h3>
+
+                    <p>
+                        A web application built using React.js, focusing
+                        on reusable components, responsive UI, and
+                        interactive features. The project demonstrates
+                        component-based frontend development.
+                    </p>
+
+                    <div class="tech">
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Sh-B053/final_project_iti"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sh-b053.github.io/final_project_iti/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 9: PortfolioGenie -->
+            <div class="project-card" data-aos="fade-up">
+                <img src="./images/Screenshot 2026-10-21 151547.png"
+                    alt="PortfolioGenie Application">
+
+                <div class="project-info">
+                    <h3>PortfolioGenie</h3>
+
+                    <p>
+                        Contributed to developing a portfolio-generation
+                        web application using React.js. The project helps
+                        users present their skills and projects through
+                        a professional portfolio, with a focus on reusable
+                        components and user-friendly interfaces.
+                    </p>
+
+                    <div class="tech">
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/MohamedMabrouk-74/PortfolioGenie"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://portfolio-genie-ten.vercel.app/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             
-            <!-- ========================
-        Project 1
-========================= -->
 
 <div class="project-card" data-aos="fade-up">
-
-    <img src="./images/Screenshot 2026-07-27 122039.png" alt="">
+    <img src="./images/Screenshot 2026-10-21 152451.png"
+        alt="Book Store Website">
 
     <div class="project-info">
-
-        <h3>Movie App</h3>
+        <h3>Book Store</h3>
 
         <p>
-A modern and responsive web application built using React.js, focusing on reusable components, state management, and clean UI design. The project provides a smooth user experience with responsive layouts, organized code structure, and interactive features, showcasing my frontend development skills and best practices in React.        </p>
+            A responsive Book Store website with a clean and
+            user-friendly interface, designed to help users
+            explore books and enjoy a smooth browsing experience.
+        </p>
 
         <div class="tech">
-
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
-
         </div>
 
         <div class="project-links">
-
-            <a href="https://github.com/Sh-B053/final_project_iti.git" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://sh-b053.github.io/final_project_iti/" target="_blank">
+            <a href="https://sh-b053.github.io/Book-Store/"
+                target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
             </a>
 
+            <a href="https://github.com/Sh-B053/Book-Store"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
         </div>
-
     </div>
-
 </div>
 
+    </section>
 
-</div>
+    <!-- Certificates -->
+    <section class="certificates section" id="certificates">
 
-</section>
-
-<!--========================
-      Certificates
-=========================-->
-
-<section class="certificates section" id="certificates">
-
-    <div class="section-title">
-
-        <span>Certificates</span>
-
-        <h2>My Certifications</h2>
-
-    </div>
-
-    <div class="certificate-container">
-
-        <div class="certificate-card">
-
-            <i class="fa-solid fa-award"></i>
-
-            <h3>DEPI UI / UX</h3>
-
-            <p>
-                Successfully completed the UI/UX Design track.
-            </p>
-
+        <div class="section-title">
+            <span>Certificates</span>
+            <h2>My Certifications</h2>
         </div>
 
-        <div class="certificate-card">
+        <div class="certificate-container">
 
-            <i class="fa-solid fa-award"></i>
+            <div class="certificate-card">
+                <i class="fa-solid fa-award"></i>
+                <h3>DEPI UI / UX</h3>
+                <p>Completed the UI/UX Design training track.</p>
+            </div>
 
-            <h3>ITI React.js</h3>
+            <div class="certificate-card">
+                <i class="fa-solid fa-award"></i>
+                <h3>ITI React.js</h3>
+                <p>Completed a 120-hour React.js training program.</p>
+            </div>
 
-            <p>
-                120 Hours React.js Training Program.
-            </p>
+            <div class="certificate-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>NTI Web Design</h3>
+                <p>120-hour summer training. Certificate pending.</p>
+            </div>
 
-        </div>
-
-        <div class="certificate-card">
-
-            <i class="fa-solid fa-clock"></i>
-
-            <h3>NTI Web Designer</h3>
-
-            <p>
-
-                Certificate Coming Soon
-
-            </p>
-
-        </div>
-
-        <div class="certificate-card">
-
-            <i class="fa-solid fa-clock"></i>
-
-            <h3>DEPI React Front-End</h3>
-
-            <p>
-
-                Certificate Coming Soon
-
-            </p>
+            <div class="certificate-card">
+                <i class="fa-solid fa-award"></i>
+                <h3>DEPI React Front-End</h3>
+                <p>Completed the six-month training track.</p>
+            </div>
 
         </div>
+    </section>
 
-    </div>
+    <!-- Contact -->
+    <section class="contact section" id="contact">
 
-</section>
-
-<!--========================
-        Contact
-=========================-->
-
-<section class="contact section" id="contact">
-
-    <div class="section-title">
-
-        <span>Contact</span>
-
-        <h2>Let's Work Together</h2>
-
-    </div>
-
-    <div class="contact-container">
-
-        <div class="contact-card">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <h3>Email</h3>
-
-            <p>
-
-                <a href="mailto:shimma.baakri@gmail.com">
-
-                    shimma.baakri12@gmail.com
-
-                </a>
-
-            </p>
-
+        <div class="section-title">
+            <span>Contact</span>
+            <h2>Let's Work Together</h2>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-container">
 
-            <i class="fa-solid fa-phone"></i>
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:shimma.baakri12@gmail.com">
+                        shimma.baakri12@gmail.com
+                    </a>
+                </p>
+            </div>
 
-            <h3>Phone</h3>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>
+                    <a href="tel:+201123177180">+20 1123177180</a>
+                </p>
+            </div>
 
-            <p>
+            <div class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+                <p>
+                    <a href="https://github.com/Sh-B053"
+                        target="_blank" rel="noopener noreferrer">
+                        github.com/Sh-B053
+                    </a>
+                </p>
+            </div>
 
-                <a href="tel:+201123177180">
-
-                    +20 1123177180
-
-                </a>
-
-            </p>
-
-        </div>
-
-        <div class="contact-card">
-
-            <i class="fa-brands fa-github"></i>
-
-            <h3>GitHub</h3>
-
-            <p>
-
-                <a href="https://github.com/Sh-B053" target="_blank">
-
-                    github.com/Sh-B053
-
-                </a>
-
-            </p>
-
-        </div>
-
-        <div class="contact-card">
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            <h3>LinkedIn</h3>
-
-            <p>
-
-                <a href="https://www.linkedin.com/in/shimaa-bakri" target="_blank">
-
-                    linkedin.com/in/shimaa-bakri
-
-                </a>
-
-            </p>
+            <div class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/shimaa-bakri"
+                        target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/shimaa-bakri
+                    </a>
+                </p>
+            </div>
 
         </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer>
 
-</section>
+        <h2>Shimaa Bakri Ahmed</h2>
 
-<!--========================
-        Footer
-=========================-->
+        <p>Web Designer | Front-End Developer</p>
 
-<footer>
+        <div class="footer-icons">
+            <a href="https://github.com/Sh-B053"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
 
-    <h2>Shimaa Bakri Ahmed</h2>
+            <a href="https://www.linkedin.com/in/shimaa-bakri"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-    <p>
+            <a href="mailto:shimma.baakri12@gmail.com"
+                aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
 
-        Web Designer | Front-End Developer
+        <p class="copyright">
+            © 2026 Shimaa Bakri Ahmed. All Rights Reserved.
+        </p>
 
-    </p>
+    </footer>
 
-    <div class="footer-icons">
+    <!-- Back To Top -->
+    <button id="topBtn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        <a href="https://github.com/Sh-B053" target="_blank">
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-            <i class="fab fa-github"></i>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        </a>
-
-        <a href="https://www.linkedin.com/in/shimaa-bakri" target="_blank">
-
-            <i class="fab fa-linkedin"></i>
-
-        </a>
-
-        <a href="mailto:shimma.baakri@gmail.com">
-
-            <i class="fa-solid fa-envelope"></i>
-
-        </a>
-
-    </div>
-
-    <p class="copyright">
-
-        © 2026 Shimaa Bakri Ahmed. All Rights Reserved.
-
-    </p>
-
-</footer>
-
-<!-- Back To Top -->
-
-<button id="topBtn">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<!-- AOS -->
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<!-- Typed JS -->
-
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<script src="./app.js"></script>
+    <!-- Main JavaScript -->
+    <script src="./app.js"></script>
 
 </body>
-
 </html>

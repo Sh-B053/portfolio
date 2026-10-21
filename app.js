@@ -1,231 +1,224 @@
+
 /*=========================
-AOS
+AOS Animation
 =========================*/
 
-AOS.init({
-
-    duration:1000,
-    once:true
-
-});
-
+if (typeof AOS !== "undefined") {
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 80
+    });
+}
 
 /*=========================
 Typing Animation
 =========================*/
 
-new Typed(".typing",{
+if (typeof Typed !== "undefined" &&
+    document.querySelector(".typing")) {
 
-    strings:[
-
-        "Web Designer",
-        "Front-End Developer",
-        "React Developer",
-        "UI / UX Designer"
-
-    ],
-
-    typeSpeed:100,
-
-    backSpeed:60,
-
-    backDelay:1500,
-
-    loop:true
-
-});
-
+    new Typed(".typing", {
+        strings: [
+            "Web Designer",
+            "Front-End Developer",
+            "React Developer",
+            "UI / UX Designer"
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1500,
+        loop: true
+    });
+}
 
 /*=========================
 Mobile Menu
 =========================*/
 
 const menu = document.querySelector(".menu");
-
 const nav = document.querySelector("nav");
 
-menu.onclick = ()=>{
+function toggleMenu() {
+    if (nav) {
+        nav.classList.toggle("active");
+    }
+}
 
-    nav.classList.toggle("active");
+if (menu && nav) {
 
-};
+    menu.addEventListener("click", toggleMenu);
 
+    menu.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggleMenu();
+        }
+    });
+
+}
 
 /*=========================
-Close Menu
+Close Mobile Menu
 =========================*/
 
-document.querySelectorAll("nav a").forEach(link=>{
+document.querySelectorAll("nav a").forEach(function (link) {
 
-    link.onclick=()=>{
+    link.addEventListener("click", function () {
 
-        nav.classList.remove("active");
+        if (nav) {
+            nav.classList.remove("active");
+        }
 
-    }
+    });
 
 });
-
 
 /*=========================
 Sticky Header
 =========================*/
 
-const header=document.querySelector("header");
+const header = document.querySelector("header");
 
-window.addEventListener("scroll",()=>{
+function updateHeader() {
 
-    if(window.scrollY>50){
+    if (!header) return;
 
-        header.style.background="rgba(8,17,31,.95)";
+    if (window.scrollY > 50) {
 
-        header.style.boxShadow="0 5px 20px rgba(0,0,0,.3)";
+        header.style.background = "rgba(8,17,31,.95)";
+        header.style.boxShadow = "0 5px 20px rgba(0,0,0,.3)";
 
-    }
+    } else {
 
-    else{
-
-        header.style.background="rgba(15,23,42,.8)";
-
-        header.style.boxShadow="none";
+        header.style.background = "rgba(15,23,42,.8)";
+        header.style.boxShadow = "none";
 
     }
 
-});
-
+}
 
 /*=========================
 Scroll Progress
 =========================*/
 
-window.onscroll=()=>{
+function updateScrollProgress() {
 
-    let winScroll=document.body.scrollTop||
+    const progressBar = document.getElementById("progress-bar");
 
-    document.documentElement.scrollTop;
+    if (!progressBar) return;
 
-    let height=document.documentElement.scrollHeight-
+    const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
-    document.documentElement.clientHeight;
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
 
-    let scrolled=(winScroll/height)*100;
+    const progress = scrollHeight > 0
+        ? (scrollTop / scrollHeight) * 100
+        : 0;
 
-    document.getElementById("progress-bar").style.width=scrolled+"%";
+    progressBar.style.width = progress + "%";
 
 }
-
 
 /*=========================
 Back To Top
 =========================*/
 
-const topBtn=document.getElementById("topBtn");
+const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll",()=>{
+function updateTopButton() {
 
-    if(window.scrollY>400){
+    if (!topBtn) return;
 
-        topBtn.style.display="block";
+    topBtn.style.display = window.scrollY > 400
+        ? "block"
+        : "none";
 
-    }
+}
 
-    else{
+if (topBtn) {
 
-        topBtn.style.display="none";
+    topBtn.addEventListener("click", function () {
 
-    }
-
-});
-
-
-topBtn.onclick=()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
     });
 
-};
-
+}
 
 /*=========================
-Active Nav Links
+Active Navigation Links
 =========================*/
 
-const sections=document.querySelectorAll("section");
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("nav ul li a");
 
-const navLinks=document.querySelectorAll("nav ul li a");
+function updateActiveNav() {
 
-window.addEventListener("scroll",()=>{
+    let currentSection = "";
 
-    let current="";
+    sections.forEach(function (section) {
 
-    sections.forEach(section=>{
+        const sectionTop = section.offsetTop - 150;
+        const sectionBottom = sectionTop + section.offsetHeight;
 
-        const sectionTop=section.offsetTop-120;
-
-        const sectionHeight=section.clientHeight;
-
-        if(pageYOffset>=sectionTop){
-
-            current=section.getAttribute("id");
-
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionBottom
+        ) {
+            currentSection = section.getAttribute("id");
         }
 
     });
 
-    navLinks.forEach(link=>{
+    navLinks.forEach(function (link) {
 
         link.classList.remove("active");
 
-        if(link.getAttribute("href")==="#"+current){
-
+        if (link.getAttribute("href") === "#" + currentSection) {
             link.classList.add("active");
-
         }
 
     });
 
-});
-
+}
 
 /*=========================
-Reveal Cards
+Scroll Events
 =========================*/
 
-const cards=document.querySelectorAll(
+function handleScroll() {
 
-".skill-card,.service-card,.project-card,.certificate-card,.contact-card"
+    updateHeader();
+    updateScrollProgress();
+    updateTopButton();
+    updateActiveNav();
 
-);
+}
 
-cards.forEach(card=>{
-
-    card.addEventListener("mouseenter",()=>{
-
-        card.style.transform="translateY(-10px)";
-
-    });
-
-    card.addEventListener("mouseleave",()=>{
-
-        card.style.transform="translateY(0)";
-
-    });
-
-});
-
+window.addEventListener("scroll", handleScroll, { passive: true });
 
 /*=========================
 Current Year
 =========================*/
 
-const year=document.querySelector(".copyright");
+const copyright = document.querySelector(".copyright");
 
-if(year){
+if (copyright) {
 
-    year.innerHTML=`© ${new Date().getFullYear()} Shimaa Bakri Ahmed. All Rights Reserved.`;
+    copyright.textContent =
+        `© ${new Date().getFullYear()} Shimaa Bakri Ahmed. All Rights Reserved.`;
 
 }
+
+/*=========================
+Initial Page State
+=========================*/
+
+handleScroll();
