@@ -778,3 +778,168 @@ Icon Hover Effects
 .certificate-card:hover i {
     transform: rotate(10deg) scale(1.15);
 }
+
+/*==========================
+Project Category Headings
+==========================*/
+
+.project-category-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 15px 0 30px;
+    padding: 22px 25px;
+    background: #1E293B;
+    border-left: 4px solid #3B82F6;
+    border-radius: 12px;
+}
+
+.project-category-title > i {
+    color: #60A5FA;
+    font-size: 27px;
+    margin-top: 4px;
+}
+
+.project-category-title h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.project-category-title p {
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+/*==========================
+UI/UX Projects Section
+==========================*/
+
+.uiux-projects-section {
+    margin-top: 65px;
+}
+
+.uiux-projects-section .projects-container {
+    margin-top: 25px;
+}
+
+/* Design Preview Placeholder */
+
+.design-image-placeholder {
+    height: 230px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.design-image-placeholder > i {
+    font-size: 48px;
+    color: #60A5FA;
+}
+
+.design-image-placeholder span {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.design-image-placeholder small {
+    color: #94A3B8;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Keep design cards aligned */
+
+.design-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.design-card .project-info {
+    flex: 1;
+}
+
+.design-card .project-links {
+    margin-top: auto;
+}
+
+/* Upcoming Design Project */
+
+.design-card.upcoming-project {
+    border: 1px dashed #3B82F6;
+    background: #162238;
+}
+
+.design-card.upcoming-project .project-placeholder {
+    background: #111D32;
+}
+
+/* Responsive Category Heading */
+
+@media (max-width: 500px) {
+    .project-category-title {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .project-category-title > i {
+        font-size: 22px;
+    }
+
+    .project-category-title h3 {
+        font-size: 20px;
+    }
+
+    .project-category-title p {
+        font-size: 13px;
+    }
+}
+.design-project-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transition: transform 0.5s;
+}
+
+.design-card:hover .design-project-image {
+    transform: scale(1.05);
+}
+
+.project-description {
+    margin-top: 10px;
+}
+
+.project-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.project-text.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #60A5FA;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    color: #93C5FD;
+}

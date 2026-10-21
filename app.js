@@ -222,3 +222,24 @@ Initial Page State
 =========================*/
 
 handleScroll();
+
+document.querySelectorAll(".project-description").forEach((description) => {
+    const text = description.querySelector(".project-text");
+    const button = description.querySelector(".read-more-btn");
+
+    if (!text || !button) return;
+
+    // Show the button only if the text exceeds 3 lines
+    const isLong = text.scrollHeight > text.clientHeight + 1;
+
+    if (!isLong) {
+        button.style.display = "none";
+        return;
+    }
+
+    button.addEventListener("click", () => {
+        const isExpanded = text.classList.toggle("expanded");
+
+        button.textContent = isExpanded ? "Read Less" : "Read More";
+    });
+});
